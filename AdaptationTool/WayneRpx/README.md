@@ -283,3 +283,11 @@ if WNIsSmallScreen { }           // ✅ 推荐
 
 **💡 提示**: 查看 [USAGE.md](USAGE.md) 了解更多高级用法和详细示例。
 
+如果好用你可以支持下我吗？我将持续维护它！
+
+<p align="center">
+  <img src="wx.jpg" width="300" alt="微信赞赏码" />
+  <img src="zfb.jpg" width="300" alt="支付宝收款码" />
+</p>
+
+有问题联系QQ:540378725
