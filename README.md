@@ -1,4 +1,4 @@
-# iOS 屏幕适配工具 (WNRpx)国产国产国产！！！
+# iOS 屏幕适配工具 (WayneRpx)
 
 一个强大的 iOS 响应式布局工具，支持所有 iPhone 和 iPad 型号的自适应屏幕尺寸。
 
@@ -12,7 +12,45 @@
 - 🔌 **OC 兼容**: 完全支持 Objective-C 调用
 - ⚡ **零侵入**: 通过扩展方法实现，不影响现有代码
 
+## 📦 安装
+
+### Swift Package Manager
+
+在 Xcode 中添加依赖：
+
+1. **通过 Xcode 界面添加**
+   - File > Add Packages...
+   - 输入仓库 URL: `https://github.com/yourusername/WayneRpx.git`
+   - 选择版本规则，点击 Add Package
+
+2. **在 Package.swift 中添加**
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/yourusername/WayneRpx.git", from: "1.0.0")
+]
+```
+
+然后在 target 中添加依赖：
+
+```swift
+.target(
+    name: "YourTarget",
+    dependencies: ["WayneRpx"]
+)
+```
+
+### 手动导入
+
+直接将 `Sources/WayneRpx` 目录下的所有 Swift 文件拖入项目即可。
+
 ## 🚀 快速开始
+
+### 导入框架
+
+```swift
+import WayneRpx
+```
 
 ### 基础用法
 
@@ -290,4 +328,3 @@ if WNIsSmallScreen { }           // ✅ 推荐
   <img src="zfb.jpg" width="300" alt="支付宝收款码" />
 </p>
 
-有问题联系QQ:540378725
