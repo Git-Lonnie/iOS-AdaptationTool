@@ -1,4 +1,4 @@
-# iOS 屏幕适配工具 (WayneRpx)
+# iOS 屏幕适配工具 (WayneRpx) 国产国产国产！！！
 
 一个强大的 iOS 响应式布局工具，支持所有 iPhone 和 iPad 型号的自适应屏幕尺寸。
 
@@ -20,14 +20,14 @@
 
 1. **通过 Xcode 界面添加**
    - File > Add Packages...
-   - 输入仓库 URL: `https://github.com/yourusername/WayneRpx.git`
+   - 输入仓库 URL: `https://github.com/Git-Lonnie/WayneRpx.git`
    - 选择版本规则，点击 Add Package
 
 2. **在 Package.swift 中添加**
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/yourusername/WayneRpx.git", from: "1.0.0")
+    .package(url: "https://github.com/Git-Lonnie/WayneRpx.git", from: "1.0.0")
 ]
 ```
 
