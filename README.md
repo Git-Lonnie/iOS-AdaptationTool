@@ -315,11 +315,22 @@ if WNIsSmallScreen { }           // ✅ 推荐
 
 ## 📄 许可证
 
-[MIT License]
+MIT License
 
----
+## 作者
+
+Wayne
+
+## 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+## 更新日志
+
+### 1.0.0
 
 **💡 提示**: 查看 [USAGE.md](USAGE.md) 了解更多高级用法和详细示例。
+
 
 如果好用你可以支持下我吗？我将持续维护它！
 
@@ -328,3 +339,4 @@ if WNIsSmallScreen { }           // ✅ 推荐
   <img src="zfb.jpg" width="300" alt="支付宝收款码" />
 </p>
 
+有问题联系QQ:540378725
