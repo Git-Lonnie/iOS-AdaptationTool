@@ -309,10 +309,6 @@ if WNIsSmallScreen { }           // ✅ 推荐
 5. **安全区域**: 始终使用 `WNSafeTop` 和 `WNSafeBottom`
 6. **灵动岛**: 注意灵动岛设备的 `safeTop` 更大（≥59pt）
 
-## 🤝 贡献
-
-欢迎提交 Issue 和 Pull Request！
-
 ## 📄 许可证
 
 MIT License
