@@ -20,14 +20,14 @@
 
 1. **通过 Xcode 界面添加**
    - File > Add Packages...
-   - 输入仓库 URL: `https://github.com/Git-Lonnie/WayneRpx.git`
+   - 输入仓库 URL: `https://github.com/Git-Lonnie/iOS-AdaptationTool.git`
    - 选择版本规则，点击 Add Package
 
 2. **在 Package.swift 中添加**
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Git-Lonnie/WayneRpx.git", from: "1.0.0")
+    .package(url: "https://github.com/Git-Lonnie/iOS-AdaptationTool.git", from: "1.0.0")
 ]
 ```
 
