@@ -3,6 +3,7 @@
 //
 //  Created by wayne on 2020/5/20
 
+import UIKit
 
 
 public typealias WNRpx = WNResponsiveLayout

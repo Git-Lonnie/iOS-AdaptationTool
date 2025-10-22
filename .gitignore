@@ -19,9 +19,10 @@ DerivedData
 *.xcscmblueprint
 
 # Swift Package Manager
-/.build
-/Packages
+.build/
+Packages/
 /*.xcodeproj
 Package.resolved
 .swiftpm/
+xcuserdata/
 
