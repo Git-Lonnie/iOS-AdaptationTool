@@ -35,7 +35,7 @@ let fontSize = 16.rpx    // 字体大小也可以自适应
 
 ```swift
 // 在 AppDelegate 中设置
-WNResponsiveLayout.samWNeWith = 390.0  // 使用 390 作为基准宽度
+WNResponsiveLayout.sampleWidth = 390.0  // 使用 390 作为基准宽度
 ```
 
 ### 3. 为不同设备指定特定值
@@ -307,7 +307,7 @@ let value3 = WNResponsiveLayout.roundToNearestZeroOrFive(12.1) // 12.0
 
 ## 最佳实践
 
-1. **设计稿基准**: 如果设计稿不是 375pt，在应用启动时修改 `samWNeWith`
+1. **设计稿基准**: 如果设计稿不是 375pt，在应用启动时修改 `sampleWidth`
 2. **iPad 适配**: 建议为 iPad 单独指定值，而不是完全依赖自动缩放
 3. **小屏优化**: 对于小屏设备（SE、Mini），适当减小元素尺寸以保证内容完整显示
 4. **Pro Max 优化**: 对于大屏设备，可以适当增大元素以充分利用空间

@@ -211,7 +211,7 @@ class CollectionViewController: UIViewController {
 ```swift
 // 默认基准宽度是 375pt
 // 如果设计稿是其他尺寸，可以修改
-WNResponsiveLayout.samWNeWith = 390.0
+WNResponsiveLayout.sampleWidth = 390.0
 ```
 
 ### 全局控制

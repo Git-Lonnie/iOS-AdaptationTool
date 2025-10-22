@@ -1,8 +1,8 @@
 //
 //  WNScreen.swift
-//  newDev
+//  WayneRpx
 //
-//  Created by wayne on 2020/5/15.abc_
+//  Created by wayne on 2020/5/15
 //
 
 import UIKit

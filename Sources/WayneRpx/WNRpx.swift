@@ -18,19 +18,26 @@ public typealias WNRpx = WNResponsiveLayout
         UIScreen.main.scale
     }
     
-    private var _samWNeWidth: CGFloat = 375.0
-    private lazy var _ratio: CGFloat = UIScreen.main.bounds.size.width / _samWNeWidth
+    private var _sampleWidth: CGFloat = 375.0
+    private lazy var _ratio: CGFloat = UIScreen.main.bounds.size.width / _sampleWidth
     
-    /// 视觉稿的 samWNe 宽度, default is 375
-    @objc public static var samWNeWith: CGFloat {
-        get { WNResponsiveLayout.shared._samWNeWidth }
+    /// 视觉稿的基准宽度, default is 375
+    @objc public static var sampleWidth: CGFloat {
+        get { WNResponsiveLayout.shared._sampleWidth }
         set {
-            WNResponsiveLayout.shared._samWNeWidth = newValue
-            WNResponsiveLayout.shared._ratio = UIScreen.main.bounds.size.width / WNResponsiveLayout.shared._samWNeWidth
+            WNResponsiveLayout.shared._sampleWidth = newValue
+            WNResponsiveLayout.shared._ratio = UIScreen.main.bounds.size.width / WNResponsiveLayout.shared._sampleWidth
         }
     }
     
-    /// iPad zoom scale.abc_ default is 1.5
+    /// 兼容旧版本的属性名
+    @available(*, deprecated, renamed: "sampleWidth", message: "请使用 sampleWidth 替代")
+    @objc public static var samWNeWith: CGFloat {
+        get { sampleWidth }
+        set { sampleWidth = newValue }
+    }
+    
+    /// iPad zoom scale, default is 1.5
     @objc public static var iPadZoomScale: CGFloat = 1.5
     
     /// default means width ratio
@@ -430,3 +437,4 @@ public extension Double {
         return WNResponsiveLayout.calculate(CGFloat(doubleValue), iPad: iPad, iPhone5: iPhone5)
     }
 }
+
