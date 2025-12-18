@@ -19,7 +19,23 @@ public typealias WNRpx = WNResponsiveLayout
     }
     
     private var _sampleWidth: CGFloat = 375.0
-    private lazy var _ratio: CGFloat = UIScreen.main.bounds.size.width / _sampleWidth
+    private var _cachedRatio: CGFloat = 0
+    
+    private var _ratio: CGFloat {
+        get {
+            if _cachedRatio > 0 {
+                return _cachedRatio
+            }
+            let width = UIScreen.main.bounds.size.width
+            if width > 0 {
+                _cachedRatio = width / _sampleWidth
+            }
+            return width / _sampleWidth
+        }
+        set {
+            _cachedRatio = newValue
+        }
+    }
     
     /// 视觉稿的基准宽度, default is 375
     @objc public static var sampleWidth: CGFloat {
